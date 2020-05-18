@@ -1,0 +1,60 @@
+*{
+    margin:  0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.col1, .col2, .col3{
+    background-color: blueviolet;
+    color: aqua;
+    width: 300px;
+    color: black;
+    border: 10px solid brown;
+}
+
+.float-cols .col1,
+.float-cols .col2,
+.float-cols .col3{
+    width: 30%;
+    height: 700px;
+    background:#fff;
+    margin-right: 5%;
+    margin-bottom: 100px;
+}
+.float-cols .col3{
+    margin-right: 0;
+}
+
+/* tablet */
+@media(max-width:1024px){
+    .float-cols .col1,
+    .float-cols .col2,
+    .float-cols .col3{
+        width: 45%;
+    }
+    .float-cols .col1{
+        margin-right: 10%;
+    }
+    .float-cols .col2{
+        margin-right: 0;
+    }
+    .float-cols .col3{
+        margin-left: calc(100%-45%/2);
+    }
+}
+
+/* phone */
+@media(max-width:768px){
+    .float-cols .col1,
+    .float-cols .col2,
+    .float-cols .col3{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
